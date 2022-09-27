@@ -9,3 +9,10 @@ You've been asked to refactor the function `deterministicPartitionKey` in [`dpk.
 You will be graded on the exhaustiveness and quality of your unit tests, the depth of your refactor, and the level of insight into your thought process provided by the written explanation.
 
 ## Your Explanation Here
+
+1. Replace the second if-else block with a single if-not block, making it easier to read.  
+
+2. Move a part of code that processes event to an function called get_event_candidate to return a candidate based on event state.  
+Also remove if-else block as it's unneccessary now.
+
+3. Move a part of code that modifies the candidate based on its type and value to a function called format_candidate.  
